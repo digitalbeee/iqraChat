@@ -1,0 +1,73 @@
+.thread{
+    display: flex;
+    flex: .65;
+    flex-direction: column;
+    height: 100vh;
+}
+.thread_header{
+    display: flex;
+    border-bottom: 1px solid rgba(190, 190, 190, .1);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.thread__header__contents{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+.thread__header__contents__info{
+    margin-left: 15px;
+}
+.thread__header__contents__info > h5{
+    font-weight: 500;
+    color: gray;
+}
+.thread__header__details{
+    color: white;
+}
+.thread__header__details:hover{
+    color: rgba(2, 150, 199);
+}
+.thread__messages{
+   flex: 1;
+   overflow: auto;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+ .thread__input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-top: 1px solid rgba(190, 190, 190, .1);
+ }
+ .thread__input > form{
+     display: flex;
+     flex: 1;
+     flex-direction: row;
+     background-color: #2d4671;
+     padding: 10px;
+     border-radius: 20px;
+ }
+ .thread__input > form > input{
+    flex: 1;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.thread__input > form > button{
+    display: none;
+}
+
+.thread__input > .MuiSvgIcon-root {
+    padding: 10px;
+    color: #fff;
+}
